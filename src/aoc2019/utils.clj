@@ -8,3 +8,5 @@
     (catch Exception exc nil)))
 
 (defn sum [coll] (reduce + coll))
+
+(defn abs [n] (max n (- n)))

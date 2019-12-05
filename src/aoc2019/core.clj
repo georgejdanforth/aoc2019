@@ -1,7 +1,9 @@
 (ns aoc2019.core
-  (:require [aoc2019.day-1 :as d1]))
+  (:require [aoc2019.day-1 :as d1]
+            [aoc2019.day-2 :as d2]))
 
-(def days {:d1 {:p1 d1/part-1 :p2 d1/part-2}})
+(def days {:d1 {:p1 d1/part-1 :p2 d1/part-2}
+           :d2 {:p1 d2/part-1 :p2 d2/part-2}})
 
 (def validators [#(not (nil? %1))
                  #(= (count %1) 2)
